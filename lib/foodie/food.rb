@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'active_support/inflector'
 
 module Foodie
   class Food
@@ -8,6 +9,10 @@ module Foodie
       else
         "Delicious!"
       end
+    end
+
+    def self.pluralize(word)
+      word.pluralize
     end
   end
 end
