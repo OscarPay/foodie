@@ -1,24 +1,41 @@
 # frozen_string_literal: true
 
 RSpec.describe Foodie::Food do
+
+  subject { Foodie::Food }
+
   it "broccoli is gross" do
-    expect(Foodie::Food.portray("Broccoli")).to eql("Gross!")
+    expect(subject.portray("Broccoli")).to eql("Gross!")
   end
 
   it "anything else is delicious" do
-    expect(Foodie::Food.portray("Not Broccoli")).to eql("Delicious!")
+    expect(subject.portray("Not Broccoli")).to eql("Delicious!")
   end
 
   it "pluralizes a word" do
-    expect(Foodie::Food.pluralize("Tomato")).to eql("Tomatoes")
+    expect(subject.pluralize("Tomato")).to eql("Tomatoes")
   end
 
-  it "has getter for important_id" do
-    expect(Foodie::Food.important_id).to be nil
+  context ".important_id" do
+    it "has getter for important_id" do
+      expect(subject.important_id).to be nil
+    end
+  
+    it "has setter for important_id" do
+      subject.important_id = 4
+      expect(subject.important_id).to be 4
+    end
   end
 
-  it "has setter for important_id" do
-    Foodie::Food.important_id = 4
-    expect(Foodie::Food.important_id).to be 4
+  context ".something_cool" do
+    it "throws an exception" do
+      subject.important_id = nil
+      expect { subject.something_cool }.to raise_error(StandardError, "Important ID undefined.")
+    end
+
+    it "returns something_cool" do
+      subject.important_id = 4
+      expect(subject.something_cool).to eq("Something Cool!")
+    end
   end
 end

@@ -18,5 +18,11 @@ module Foodie
     def self.pluralize(word)
       word.pluralize
     end
+
+    def self.something_cool
+      raise StandardError.new("Important ID undefined.") if important_id.blank?
+
+      "Something Cool!"
+    end
   end
 end
