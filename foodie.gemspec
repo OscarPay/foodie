@@ -6,17 +6,17 @@ Gem::Specification.new do |spec|
   spec.name = "foodie-oscarpay4-test"
   spec.version = Foodie::VERSION
   spec.authors = ["Oscar Pérez"]
-  spec.email = ["oscar.perez@michelada.io"]
+  spec.email = ["oscar.pay4@gmail.com"]
 
   spec.summary = "Foodie!"
   spec.description = "A simple gem for testing"
-  spec.homepage = "https://rubygems.org/gems/foodie"
+  spec.homepage = "https://rubygems.org/gems/foodie-oscarpay4-test"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/OscarPay"
-  spec.metadata["changelog_uri"] = "https://github.com/OscarPay/madmin/tags"
+  spec.metadata["source_code_uri"] = "https://github.com/OscarPay/foodie"
+  spec.metadata["changelog_uri"] = "https://github.com/OscarPay/foodie/releases"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

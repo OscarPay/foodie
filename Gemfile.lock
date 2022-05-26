@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foodie (0.1.0)
+    foodie-oscarpay4-test (0.1.0)
       activesupport
       thor
 
@@ -103,7 +103,7 @@ PLATFORMS
 DEPENDENCIES
   aruba
   cucumber
-  foodie!
+  foodie-oscarpay4-test!
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.21)
