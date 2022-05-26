@@ -1,4 +1,6 @@
-require 'thor/group'
+# frozen_string_literal: true
+
+require "thor/group"
 module Foodie
   module Generators
     class Recipe < Thor::Group
@@ -8,7 +10,7 @@ module Foodie
       argument :name, type: :string
 
       def self.source_root
-        File.dirname(__FILE__) + "/recipe"
+        "#{File.dirname(__FILE__)}/recipe"
       end
 
       def create_group

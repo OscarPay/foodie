@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "foodie"
-require 'foodie/food'
+require "foodie/food"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

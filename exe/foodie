@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
-require 'foodie/cli'
+# frozen_string_literal: true
+
+require "foodie/cli"
 Foodie::CLI.start

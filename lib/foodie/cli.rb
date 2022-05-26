@@ -1,10 +1,11 @@
-require 'thor'
-require 'foodie/food'
-require 'foodie/generators/recipe'
+# frozen_string_literal: true
+
+require "thor"
+require "foodie/food"
+require "foodie/generators/recipe"
 
 module Foodie
   class CLI < Thor
-
     desc "portray ITEM", "Determines if a piece of food is gross or delicious"
     def portray(name)
       puts Foodie::Food.portray(name)
@@ -20,6 +21,5 @@ module Foodie
     def recipe(group, name)
       Foodie::Generators::Recipe.start([group, name])
     end
-
   end
 end
