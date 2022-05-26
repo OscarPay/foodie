@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.describe Foodie::Food do
-
   subject { Foodie::Food }
 
   it "broccoli is gross" do
@@ -20,7 +19,7 @@ RSpec.describe Foodie::Food do
     it "has getter for important_id" do
       expect(subject.important_id).to be nil
     end
-  
+
     it "has setter for important_id" do
       subject.important_id = 4
       expect(subject.important_id).to be 4

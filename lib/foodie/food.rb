@@ -20,7 +20,7 @@ module Foodie
     end
 
     def self.something_cool
-      raise StandardError.new("Important ID undefined.") if important_id.blank?
+      raise StandardError, "Important ID undefined." if important_id.blank?
 
       "Something Cool!"
     end
